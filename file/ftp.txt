@@ -1,0 +1,10 @@
+Idle_session_timeout=600(秒) （用户会话空闲后10分钟）
+Data_connection_timeout=120（秒） （将数据连接空闲2分钟断）
+Accept_timeout=60（秒） （将客户端空闲1分钟后断）
+Connect_timeout=60（秒） （中断1分钟后又重新连接）
+Local_max_rate=50000（bite） （本地用户传输率50K）
+Anon_max_rate=30000（bite） （匿名用户传输率30K）
+Pasv_min_port=50000 （将客户端的数据连接端口改在
+Pasv_max_port=60000 50000—60000之间）
+Max_clients=200 （FTP的最大连接数）
+Max_per_ip=4 （每IP的最大连接数）sdsa
