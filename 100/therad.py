@@ -7,7 +7,7 @@ import time
 # 为线程定义一个函数
 def print_time( threadName, delay):
    count = 0
-   while count < 5:
+   while count < 5000:
       time.sleep(delay)
       count += 1
       print " 怀朔 %s: %s" % ( threadName, time.ctime(time.time()) )
