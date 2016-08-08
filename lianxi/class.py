@@ -12,8 +12,8 @@
 #         self.name=name
 #         self.score=score
 #
-# wml=test('huaishuo','90')
-# print wml.name
+# try=test('huaishuo','90')
+# print try.name
 
 class student(object):
     def __init__(self,name,score):
