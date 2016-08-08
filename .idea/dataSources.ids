@@ -1,27 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
   <data-source name="MySQL - gid@192.168.137.10" uuid="a07a69da-a1ad-4c2e-a515-e5838ce28907">
-    <database-info product="MySQL" version="5.1.73-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
-      <extra-name-characters>#@</extra-name-characters>
-      <identifier-quote-string>`</identifier-quote-string>
-    </database-info>
-    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
-    <schema name="" catalog="gid"/>
-    <table name="ddl_log" schema="" catalog="gid" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-    </table>
-    <table name="ddl_log_bak" schema="" catalog="gid" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-    </table>
-    <table name="name" schema="" catalog="gid" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="name" sqlType="CHAR" precision="12" scale="0" nullable="true" jdbcType="1"/>
-      <primary-key name="PRIMARY" columns="id"/>
-    </table>
-    <table name="test" schema="" catalog="gid" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="name" sqlType="CHAR" precision="12" scale="0" nullable="true" jdbcType="1"/>
-      <primary-key name="PRIMARY" columns="id"/>
-    </table>
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
 </component>
