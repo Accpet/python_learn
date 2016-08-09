@@ -4,8 +4,15 @@
 import MySQLdb
 
 # 打开数据库连接
-db = MySQLdb.connect("121.40.144.1","root","yangtuojia001","test" )
+db = MySQLdb.connect("121.40.144.1","root","yangtuojia001","test",3309 )
 
+# db = MySQLdb.connect(
+#     host = '121.40.144.1',
+#     port = 3309,
+#     user = 'root',
+#     passwd = 'yangtuojia001',
+#     db = 'wml',
+#     charset='utf8')
 # 使用cursor()方法获取操作游标 
 cursor = db.cursor()
 
