@@ -1,13 +1,21 @@
-__author__ = 'water'
 #!/usr/bin/python
-#-*- coding: UTF-8 -*-
+# -*- coding: UTF-8 -*-
 
-count=0
-for i in range(1,5):
-    for j in range(1,5):
-        for k in range(1,5):
-            if (i!=k) and (j!=k) and (i!=j):
-                sum=i*100+j*10+k
-                count+=1
-                print sum
-print count
+import MySQLdb
+
+# 打开数据库连接
+db = MySQLdb.connect("121.40.144.1","root","yangtuojia001","test" )
+
+# 使用cursor()方法获取操作游标 
+cursor = db.cursor()
+
+# 使用execute方法执行SQL语句
+cursor.execute("SELECT VERSION()")
+
+# 使用 fetchone() 方法获取一条数据库。
+data = cursor.fetchone()
+
+print "Database version : %s " % data
+
+# 关闭数据库连接
+db.close()
