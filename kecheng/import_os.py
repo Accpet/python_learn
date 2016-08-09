@@ -17,3 +17,4 @@ print res
 print 'hello,world'
 print "怀朔"
 os.walk('.')
+os.walk('.')
