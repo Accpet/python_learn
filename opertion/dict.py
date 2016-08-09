@@ -1,10 +1,11 @@
 __author__ = 'water'
 contact_list={
     'zhangsan':'18767543229',
-     'wml': '18767553737',
+     'try': '18767553737',
     'gid': '18767353737',
     'huaishuo': '38767553737',
 }
+contact_list['try']='hello,world'
 print contact_list
 print contact_list.keys()
 print contact_list.popitem()

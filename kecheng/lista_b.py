@@ -18,4 +18,3 @@ print aa,bb
 aa[0]=333
 print aa[0]
 
-import tab

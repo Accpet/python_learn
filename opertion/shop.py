@@ -10,4 +10,3 @@ for i in f.readlines():
 
 
 print products,prices
-
