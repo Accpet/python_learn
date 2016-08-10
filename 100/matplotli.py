@@ -8,26 +8,21 @@ python 科学计算学习：numpy快速处理数据测试
 '''
 import string
 import matplotlib.pyplot as plt
-import numpy as np
+##import numpy as np
 
-if __name__ == '__main__':
-    file = open("shop1.txt", 'r')
-    linesList = file.readlines()
-#     print(linesList)
-    linesList = [line.strip().split() for line in linesList]
-    file.close()
-    print linesList[:]
-    print (linesList)
-#     years = [string.atof(x[0]) for x in linesList]
-    years = [x[0] for x in linesList]
-    print(years)
-    price = [x[1] for x in linesList]
-    print(price)
-    plt.plot(years, price, 'b*')#,label=$cos(x^2)$)
-    plt.plot(years, price, 'r')
-    plt.xlabel(years+2000)
-    plt.ylabel(price*2000)
-    plt.ylim(0, 15)
-    plt.title('line_regression & gradient decrease')
-    plt.legend()
-    plt.show()
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0, 10, 1000)
+y = np.sin(x)
+z = np.cos(x**2)
+
+plt.figure(figsize=(8,4))
+plt.plot(x,y,label="$sin(x)$",color="red",linewidth=2)
+plt.plot(x,z,"b--",label="$cos(x^2)$")
+plt.xlabel("Time(s)")
+plt.ylabel("Volt")
+plt.title("PyPlot First Example")
+plt.ylim(-1.2,1.2)
+plt.legend()
+plt.show()
