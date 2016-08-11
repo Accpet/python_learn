@@ -29,7 +29,7 @@ Canvas.create_arc(coord,start=320,extent=360,fill="BLUE")
 
 filename ='1.jpg'
 img = tkinter.PhotoImage(filename)
-label = tkinter.Label(image=img)
+label = tkinter.Label(top,image=img)
 label.pack()
 
 top.mainloop()
